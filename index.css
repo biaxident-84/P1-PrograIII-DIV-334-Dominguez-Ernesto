@@ -1,0 +1,193 @@
+/* Colores utilizados
+fondo: rgb(13, 22, 27);
+texto: rgb(228, 226, 226);
+resaltado:rgb(196, 86, 6);
+superficies: rgb(24, 38, 46);
+*/
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(13, 22, 27);
+    color:rgb(228, 226, 226);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16 px;
+    line-height: 150%;
+}
+
+h1, h2, h3 {
+    font-family: "Manrope", sans-serif;
+}
+a{
+    color: rgb(228, 226, 226);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.titulo-seccion{
+    color: rgb(196, 86, 6);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*============ HEADER =========================
+
+===============================================*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;  
+    padding: 10px 20px;
+    background-color: rgb(24,38,46);
+    border-bottom: 2px solid rgb(196, 86, 6);
+}
+
+.marca{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-header{
+    max-width: 150px;
+}
+
+.titulo{
+    color: rgb(196, 86, 6);
+    font-size: 24px;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px
+}
+
+.link-nav {
+    font-weight: 600;
+}
+
+.link-nav:hover{
+    color: rgb(196, 86, 6);
+}
+
+
+/*===================== HERO ==================
+
+===============================================*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-hero{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contenedor-hero{
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 10px;
+}
+
+.texto-hero{
+    font-size: 20px;
+}
+
+
+/*================ CATEGORIAS index ================
+
+====================================================*/
+
+.contenedor,
+.contenedor-categorias{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.categorias-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;;
+    max-width: 100%;
+}
+
+.categoria h3{
+    margin-bottom: 10px;
+}
+
+/* ============== CATALOGO ============================
+
+======================================================*/
+
+.grilla-autos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.tarj-nombre {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/*============ ESTILO COMPARTIDO DE TARJETAS =====================
+
+================================================================*/
+
+.categoria,
+.tarjeta {
+    padding: 15px;
+    background-color: rgb(24, 38, 46);
+    border: 2px solid rgb(24, 38, 46);    /*Borde del mismo color que el fondo asi el hover cambia de color y la tarjeta no se mueve*/
+    border-radius: 10px;
+}
+
+.categoria:hover,
+.tarjeta:hover {
+    border-color: rgb(196, 86, 6);
+}
+
+
+/*============ FOOTER =========================
+
+===============================================*/
+
+.footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(24, 38, 46);
+    border-top: 2px solid rgb(196, 86, 6);
+}
